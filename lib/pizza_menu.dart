@@ -5,6 +5,21 @@ class PizzaMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  Scaffold(
+      appBar: AppBar(title: const Text('Pizza Menu'),),
+      body:Column(
+        children: [
+          Card(
+            child: Row(
+              children: [
+                Image.asset(),
+              ],
+            ),
+          ), 
+        ],
+      ) ,
+      );
+
+    
   }
 }
