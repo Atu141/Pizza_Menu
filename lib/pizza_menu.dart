@@ -23,12 +23,18 @@ class PizzaMenu extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.yellow[600]
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow[600]
+                ),
+                onPressed: () {}, 
+                child: Text("Order now!"),
+              ),
             ),
-            onPressed: () {}, 
-            child: Text("Order now!"),
           )        
         ],
       ),
