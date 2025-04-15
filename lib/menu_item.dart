@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_menu/pizza_data.dart';
 
 class MenuItem extends StatelessWidget {
-  const MenuItem({super.key});
+  const MenuItem({super.key, required Pizza pizza});
 
   @override
   Widget build(BuildContext context) {

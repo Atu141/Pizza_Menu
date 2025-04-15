@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pizza_menu/menu_item.dart';
 
+import 'pizza_data.dart';
+
 class PizzaMenu extends StatelessWidget {
   const PizzaMenu({super.key});
 
@@ -13,13 +15,8 @@ class PizzaMenu extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            MenuItem(),
-            MenuItem(),
-            MenuItem(),
-            MenuItem(),
-            MenuItem(),
-            MenuItem(),
-            MenuItem(),
+            MenuItem(pizza: pizzaData[0]),
+            MenuItem(pizza: pizzaData[1]),
           ],
         ),
       ),
