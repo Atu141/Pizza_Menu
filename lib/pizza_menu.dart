@@ -10,13 +10,18 @@ class PizzaMenu extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Pizza Menu'),
       ),
-      body: Column(
-        children: [
-          MenuItem(),
-          MenuItem(),
-          MenuItem(),
-          MenuItem(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            MenuItem(),
+            MenuItem(),
+            MenuItem(),
+            MenuItem(),
+            MenuItem(),
+            MenuItem(),
+            MenuItem(),
+          ],
+        ),
       ),
     );
   }
