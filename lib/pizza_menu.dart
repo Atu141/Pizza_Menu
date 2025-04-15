@@ -12,12 +12,25 @@ class PizzaMenu extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Pizza Menu'),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children:[
-            ...pizzaData.map((p) => MenuItem(pizza: p))
-          ],
-        ),
+      body: Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children:[
+                  ...pizzaData.map((p) => MenuItem(pizza: p))
+                ],
+              ),
+            ),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.yellow[600]
+            ),
+            onPressed: () {}, 
+            child: Text("Order now!"),
+          )        
+        ],
       ),
     );
   }
